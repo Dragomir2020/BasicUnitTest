@@ -6,6 +6,4 @@ install:
   - npm install
   - npm install coveralls --save-dev
   - npm install mocha-lcov-reporter --save-dev
-script:
-  - var lib = process.env.JSCOV ? require('../lib-cov') : require('../lib');
-  - JSCOV=1 mocha -R mocha-lcov-reporter > coverage/coverage.lcov
+
